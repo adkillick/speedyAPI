@@ -1,0 +1,2 @@
+# speedyAPI
+Play with FastAPI
