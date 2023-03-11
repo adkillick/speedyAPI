@@ -15,6 +15,7 @@ jobs:
           ENVVAR: yepyep
         run: |
           export IMAGE="$ENVVAR"
+          echo $IMAGE
           echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
   job2:
     name: OH yes
