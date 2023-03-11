@@ -15,7 +15,7 @@ jobs:
           ENVVAR: yepyep
         run: |
           export IMAGE="$ENVVAR"
-          echo "image=$IMAGE >> "$GITHUB_OUTPUT"
+          echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
   job2:
     name: OH yes
     runs-on: ubuntu-latest
