@@ -17,6 +17,9 @@ jobs:
           export IMAGE="$ENVVARandsomething"
           echo $IMAGE
           echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
+      - name: print-output
+        run: |
+          cat $GITHUB_OUTPUT
   job2:
     name: OH yes
     runs-on: ubuntu-latest
