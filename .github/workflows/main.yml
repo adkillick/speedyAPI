@@ -21,6 +21,7 @@ jobs:
           echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
       - name: print-output
         run: |
+          echo $GITHUB_OUTPUT
           cat $GITHUB_OUTPUT
   job2:
     name: OH yes
