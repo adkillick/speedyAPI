@@ -12,9 +12,11 @@ jobs:
       - name: bar
         id: build-image
         env:
-          ENVVAR: yepyep
+          EV0: aaaa
+          EV1: bbbb
+          EV2: cccc
         run: |
-          export IMAGE="$ENVVARandsomething"
+          export IMAGE="$EV0/$EV1:$EV2"
           echo $IMAGE
           echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
       - name: print-output
